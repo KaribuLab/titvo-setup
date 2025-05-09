@@ -22,7 +22,7 @@ export class SetupUseCase {
     this.logger.log(`Starting setup process ${input.userId}`)
     // Validate the API key and user ID
     const apiKey = await this.validateApiKeyUseCase.execute(input.apiKey)
-    if (apiKey.user.id !== input.userId) {
+    if (apiKey.userId !== input.userId) {
       throw new UserNotFoundError('Invalid API key')
     }
     this.logger.debug(`API key validated ${input.userId}`)
