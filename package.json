@@ -1,0 +1,22 @@
+{
+  "name": "@titvo/auth",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "ts-standard | snazzy"
+  },
+  "private": true,
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@nestjs/common": "^11.1.0",
+    "@nestjs/core": "^11.1.0",
+    "@titvo/auth": "file:auth",
+    "@titvo/shared": "file:shared"
+  },
+  "devDependencies": {
+    "ts-standard": "^12.0.2"
+  }
+}
